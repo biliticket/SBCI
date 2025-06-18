@@ -13,7 +13,8 @@ jobs:
   build:
     strategy:
       matrix:
-        os: [windows-latest, ubuntu-latest, macos-13, macos-latest, windows-11-arm]
+        os: [windows-latest, ubuntu-latest, macos-13, macos-latest]
+        # os: [windows-latest, ubuntu-latest, macos-13, macos-latest, windows-11-arm]
         include:
           - os: windows-latest
             build: BHYG-Windows.exe
