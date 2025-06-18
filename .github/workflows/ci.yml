@@ -24,8 +24,8 @@ jobs:
             build: BHYG-macOS-Intel
           - os: macos-latest
             build: BHYG-macOS-Apple_Silicon
-          - os: windows-11-arm
-            build: BHYG-Windows-arm.exe
+          # - os: windows-11-arm
+          #   build: BHYG-Windows-arm.exe
     runs-on: ${{ matrix.os }}
     env:
       version: ${{ github.ref_name }}
