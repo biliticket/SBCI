@@ -51,6 +51,9 @@ jobs:
       - name: Run Cython
         run: python cythonize.py build_ext --inplace
 
+      - name: Remove source code
+        run: rm api.py main.py bilibili_util.py
+
       - name: Build Binary
         run: pyinstaller main.spec
 
